@@ -1,0 +1,51 @@
+GET http://localhost:3001/api/blog
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibmFmZnkiLCJpZCI6IjYxNjhiN2M4Y2Q4MGYxNTRkYzNmODY0OSIsImlhdCI6MTYzNDQ4NTM4Nn0.fkN4tDmXNm-YJotmOvE1-2QQhlhaKALECaS6xN6GuiY
+###
+PUT  http://localhost:3001/api/blog/615f2d2fed6f09d58f6132a8
+Content-Type: application/json
+
+
+{
+        "title":"wtf is happending",
+        "author":"some eeeranm person",
+        "url":"the new blog",
+        "likes":238
+}
+
+###
+POST http://localhost:3001/api/blog HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibmFmZnkiLCJpZCI6IjYxNjhiN2M4Y2Q4MGYxNTRkYzNmODY0OSIsImlhdCI6MTYzNDI1MzI2Nn0.h6dmNwtDDS7X0wpJ5V8WIDjlYEdHdTT_5q25omEDBoE
+
+{
+        "title":"the user token jwt authentication",
+        "author":"programmer",
+        "url":"logrocket.io.io",
+        "likes":30
+}
+
+###
+
+DELETE  http://localhost:3001/api/blog/615e2156e70f6ee481b17f6f HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVuaW1ha2FsYWtpIiwiaWQiOiI2MTVkODgzMjBlZmFmMTFmODExYTIxYWQiLCJpYXQiOjE2MzM2NDUwMDd9.KPEgdBSsX2ZW-1VvASoKgtvPnJbqJxgK2UmljGzhnC8
+###
+GET http://localhost:3001/api/users HTTP/1.1
+
+###
+POST http://localhost:3001/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+        "name":"drizzy",
+        "username":"afolic",
+        "password":"notnaffy"
+}
+
+###
+POST http://localhost:3001/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+        "username":"naffy",
+        "password":"notnaffy"
+}
