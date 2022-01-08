@@ -15,6 +15,7 @@ const App = () => {
   const [username,setUsername] = useState('')
   const [errorMsg, setErrorMsg] = useState(null)
   const [sucessMsg,setSucessMsg] = useState(null)
+  //const [onSingup,setOnSignUP] = useState(false)
 
   /* useEffect(() => {
     blogService.getAll().then(response=> setBlogs(response))
